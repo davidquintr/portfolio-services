@@ -42,7 +42,7 @@ export default function Hero() {
               alt={element.name}
               quality={30}
               priority
-              className="h-[64px] w-[83px] md:w-[166px] md:h-[130px] object-contain floating-animation brightness-[1.4] dark:brightness-0"
+              className="h-[64px] w-[83px] md:w-[166px] md:h-[130px] object-contain floating-animation brightness-[1.4] dark:brightness-100"
               style={{animationDuration: `${element.duration}ms`}}
             />
           ))}
@@ -56,7 +56,7 @@ export default function Hero() {
       </div>
       <div className="bg-light-gradient dark:bg-dark-gradient w-full h-1/2 absolute bottom-0"></div>
       <Link aria-label={es.hero.button_aria} href={`#${ToSlug(es.technologies.title)}`} className="hover:opacity-85 transition-all active:size-10 size-12 bg-light-blue-400 dark:bg-dark-blue-200 rounded-full absolute bottom-4 sm:bottom-8 z-50 grid place-items-center animate-bounce animate-infinite animate-duration-[1800ms] animate-ease-in-out">
-        <FontAwesomeIcon icon={faAnglesDown} className="size-6 text-white dark:text-black" />
+        <FontAwesomeIcon icon={faAnglesDown} className="size-6 text-white" />
       </Link>
     </section>
   );
