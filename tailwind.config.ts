@@ -16,9 +16,10 @@ const config: Config = {
       backgroundImage: {
         "dark-gradient": "linear-gradient(transparent, #0c1738)",
         "dark-gradient-inverted": "linear-gradient(#0c1738, transparent)",
+        "light-gradient-inverted": "linear-gradient(#c0e6ff, transparent)",
         "light-gradient": "linear-gradient(transparent, #c0e6ff)",
         "light-border-gradient":
-          "linear-gradient(0.25turn, transparent, #a3daff, transparent)",
+          "linear-gradient(0.25turn, #a3daff, transparent)",
         "dark-border-gradient":
           "linear-gradient(0.25turn, #a3bbff, transparent)",
       },

@@ -13,7 +13,8 @@ const en = {
     action: {
       title: 'Make your online presence stand out with our web pages!',
       description: 'From initial loading to user interaction, we guarantee an exceptional experience. Boost your online success with fast, efficient, and responsive web pages.',
-    }
+    },
+    button_aria: 'Slide',
   },
   technologies: {
     title: 'Technologies',

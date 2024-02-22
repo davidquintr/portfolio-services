@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import en from "../sources/en";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import es from "../sources/es";
 
 export default function Form() {
   const form = useRef<HTMLFormElement>(null);
@@ -45,7 +46,7 @@ export default function Form() {
               : "bg-light-red dark:bg-dark-red"
           }`}
         >
-          {isEmailSent ? en.contact.form.success : en.contact.form.fail}
+          {isEmailSent ? es.contact.form.success : es.contact.form.fail}
         </div>
       )}
       <form
@@ -54,32 +55,32 @@ export default function Form() {
         className="md:col-span-4 "
       >
         <div className="flex flex-col mb-2">
-          <label className="hidden">{en.contact.form.names}</label>
+          <label className="hidden">{es.contact.form.names}</label>
           <input
             type="text"
             name="user_name"
             required
             className="h-16 placeholder:text-sm bg-light-gray rounded-lg border-b-2 border-light-blue-400 px-2.5 outline-light-blue-300 dark:bg-dark-bg dark:border-dark-blue-500 dark:focus:outline-dark-blue-200 dark:focus:bg-dark-items"
-            placeholder={en.contact.form.names}
+            placeholder={es.contact.form.names}
           />
         </div>
         <div className="flex flex-col mb-2">
-          <label className="hidden">{en.contact.form.email}</label>
+          <label className="hidden">{es.contact.form.email}</label>
           <input
             className="h-16 placeholder:text-sm bg-light-gray rounded-lg border-b-2 border-light-blue-400 px-2.5 outline-light-blue-300 dark:bg-dark-bg dark:border-dark-blue-500 dark:focus:outline-dark-blue-200 dark:focus:bg-dark-items"
             type="email"
             name="user_email"
             required
-            placeholder={en.contact.form.email}
+            placeholder={es.contact.form.email}
           />
         </div>
         <div className="flex flex-col">
-          <label className="hidden">{en.contact.form.message}</label>
+          <label className="hidden">{es.contact.form.message}</label>
           <textarea
             className="min-h-32 placeholder:text-sm bg-light-gray rounded-lg border-b-2 border-light-blue-400 px-2.5 py-3 outline-light-blue-300 dark:bg-dark-bg dark:border-dark-blue-500 dark:focus:outline-dark-blue-200 dark:focus:bg-dark-items"
             name="message"
             rows={4}
-            placeholder={en.contact.form.message}
+            placeholder={es.contact.form.message}
           />
         </div>
         <button
@@ -90,7 +91,7 @@ export default function Form() {
             icon={inProgress ? faSpinner : faPaperPlane}
             className={`${inProgress && "animate-spin"} size-3.5`}
           />
-          <span>{en.contact.form.send}</span>
+          <span>{es.contact.form.send}</span>
         </button>
       </form>
     </>

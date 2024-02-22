@@ -13,7 +13,8 @@ const es = {
     action: {
       title: '¡Haz que tu presencia en línea destaque con nuestras páginas web!',
       description: 'Desde la carga inicial hasta la interacción del usuario, garantizamos una experiencia excepcional. Impulsa tu éxito en línea con páginas web veloces, eficaces y responsivas.',
-    }
+    },
+    button_aria: 'Desplazar',
   },
   technologies: {
     title: 'Tecnologías',

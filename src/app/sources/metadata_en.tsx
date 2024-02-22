@@ -1,7 +1,7 @@
-const PAGE_PREFIX = "DavidQuint's Portfolio";
+const PAGE_PREFIX = "DavidQuint's Web Developer";
 const PAGE_DESCRIPTION =
-  "Hello! I'm David Quintanilla Ruiz, a programmer who also dabbles in the world of design. I consider myself a fast learner, easily adaptable to the current needs.";
-const PAGE_URL = "https://davidquintr.com/";
+  "¡Hola! Soy David Quintanilla Ruiz, un programador que también incursiona en el mundo del diseño. Me considero un aprendiz rápido, fácilmente adaptable a las necesidades actuales. Ofrezco servicios como desarrollador web, creando soluciones digitales eficientes y personalizadas para satisfacer las demandas de mis clientes.";
+const PAGE_URL = "https://services.davidquintr.com/";
 
 const MetadataBase = {
   default: {
@@ -33,21 +33,18 @@ const MetadataBase = {
 };
 
 const createPageMetadata = (pageTitle: string) => ({
-  title: `${PAGE_PREFIX} | ${pageTitle}`,
+  title: `${pageTitle} | ${PAGE_PREFIX} `,
   ...MetadataBase.default,
   openGraph: {
-    title: `${PAGE_PREFIX} | ${pageTitle}`,
+    title: `${pageTitle} | ${PAGE_PREFIX} `,
     ...MetadataBase.openGraph,
   },
   twitter: {
-    title: `${PAGE_PREFIX} | ${pageTitle}`,
+    title: `${pageTitle} | ${PAGE_PREFIX} `,
     ...MetadataBase.twitter,
   },
 });
 
-const MetadataHome = createPageMetadata("Home");
-const MetadataBlog = createPageMetadata("Blog");
-const MetadataProjects = createPageMetadata("Projects");
-const MetadataContact = createPageMetadata("Contact");
+const Metadata = createPageMetadata("Servicios");
 
-export { MetadataHome, MetadataBlog, MetadataProjects, MetadataContact };
+export default Metadata;

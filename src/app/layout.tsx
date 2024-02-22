@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`flex flex-col ${poppins.variable} font-poppins bg-light-bg dark:bg-dark-bg min-h-screen`}
+        className={`flex flex-col ${poppins.variable} font-poppins bg-white dark:bg-dark-bg min-h-screen`}
       >
         <Hero />
         <main className="w-full mx-auto flex-grow">
