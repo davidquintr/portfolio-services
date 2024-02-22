@@ -11,13 +11,14 @@
 html{
   scroll-behavior: smooth;
 }
-
-.gradient-mask-left {
-  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1.0) 90%, transparent 100%);
-}
-
-.gradient-mask-right {
-  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 90%, transparent 100%);
+@media screen and (min-width: 640px) {
+  .gradient-mask-left {
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1.0) 90%, transparent 100%);
+  }
+  
+  .gradient-mask-right {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 90%, transparent 100%);
+  }
 }
 
 @media (prefers-color-scheme: dark) {

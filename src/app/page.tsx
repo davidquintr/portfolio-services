@@ -93,8 +93,8 @@ export default function Home() {
         </div>
       </BoxContent>
       <BoxContent title={es.projects.title} light={false}>
-        <div className="sm:gradient-mask-right overflow-hidden">
-          <div className="gradient overflow-hidden sm:gradient-mask-left">
+        <div className="gradient-mask-right overflow-hidden">
+          <div className="gradient overflow-hidden gradient-mask-left">
             <ul className="carousel carousel-center w-full gap-4">
               <li className="min-w-[95vw] sm:min-w-[75vw] xl:min-w-[40vw]"></li>
               {es.projects.list.map((element, index) => (

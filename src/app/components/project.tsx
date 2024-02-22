@@ -24,7 +24,7 @@ export default function Project(project: IProject) {
         ))}
       </div>
       <div className="flex flex-col justify-between flex-1 py-2.5 px-5">
-        <div className="flex gap-1 mt-3.5 text-dark-gray">
+        <div className="flex gap-1 mt-3.5 dark:text-dark-gray text-light-blue-600">
           {project.techs.map((tech, index) => (
             <tech.icon size="36" key={index} />
           ))}
