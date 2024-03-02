@@ -22,18 +22,18 @@ export default function Home() {
       <BoxContent title={es.technologies.title} light={true}>
         <div className="flex flex-col lg:flex-row gap-2">
           <div className="flex justify-center flex-col flex-1 gap-3">
-            <h2 className="font-bold text-5xl leading-normal dark:text-dark-blue-100 text-light-blue-500 dark:first-line:text-white first-line:text-black">
+            <h2 className="font-bold text-[32px] md:text-5xl leading-normal dark:text-dark-blue-100 text-light-blue-500 dark:first-line:text-white first-line:text-black">
               {es.technologies.action.title}
             </h2>
             <p className="text-lg">{es.technologies.action.description}</p>
-            <ul className="grid grid-cols-3 xl:grid-cols-5 2xl:grid-cols-6 text-dark-gray mt-10 border-t border-l border-dark-blue-200">
+            <ul className="grid grid-cols-3 sm:grid-cols-6 2xl:grid-cols-8 text-dark-gray mt-10 border-t border-l border-dark-blue-200">
               {es.technologies.tech?.map((tech, index) => (
                 <li
                   className="dark:border-dark-blue-200 border-light-blue-500 text-light-blue-500 dark:text-dark-gray border p-3 grid place-items-center border-l-0 border-t-0"
                   key={index}
                 >
-                  <tech.icon className="size-[72px]" />
-                  <span className="mt-1 font-light">{tech.text}</span>
+                  <tech.icon className="size-[48px]" />
+                  <span className="mt-1 text-xs font-light">{tech.text}</span>
                 </li>
               ))}
             </ul>
@@ -96,7 +96,7 @@ export default function Home() {
         <div className="gradient-mask-right overflow-hidden">
           <div className="gradient overflow-hidden gradient-mask-left">
             <ul className="carousel carousel-center w-full gap-4">
-              <li className="min-w-[95vw] sm:min-w-[75vw] xl:min-w-[40vw]"></li>
+              <li className="min-w-[90vw] sm:min-w-[75vw] xl:min-w-[40vw]"></li>
               {es.projects.list.map((element, index) => (
                 <Project
                   title={element.title}
@@ -110,7 +110,7 @@ export default function Home() {
                   key={index}
                 />
               ))}
-              <li className="min-w-[95vw] sm:min-w-[75vw] xl:min-w-[40vw]"></li>
+              <li className="min-w-[90vw] sm:min-w-[75vw] xl:min-w-[40vw]"></li>
             </ul>
           </div>
         </div>

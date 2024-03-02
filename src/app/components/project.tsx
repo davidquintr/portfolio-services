@@ -6,7 +6,7 @@ export default function Project(project: IProject) {
 
   return (
     <li
-      className={`carousel-item snap-always w-[95vw] sm:w-[75vw] xl:w-[40vw] flex flex-col rounded-lg overflow-hidden`}
+      className={`carousel-item snap-always w-[90vw] sm:w-[75vw] xl:w-[40vw] flex flex-col rounded-lg overflow-hidden`}
     >
       <div className="carousel rounded-lg">
         {project.gallery.map((image, index) => (
@@ -23,7 +23,7 @@ export default function Project(project: IProject) {
           />
         ))}
       </div>
-      <div className="flex flex-col justify-between flex-1 py-2.5 px-5">
+      <div className="flex flex-col justify-between flex-1 py-2.5 sm:px-5">
         <div className="flex gap-1 mt-3.5 dark:text-dark-gray text-light-blue-600">
           {project.techs.map((tech, index) => (
             <tech.icon size="36" key={index} />
