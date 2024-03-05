@@ -10,7 +10,7 @@ export default function Service(service: IService) {
             <FontAwesomeIcon icon={element} key={index} className="size-10 lg:size-20 text-dark-yellow" />
           ))}
         </div>
-        <h2 className="dark:text-dark-blue-100 text-light-blue-400 font-bold text-2xl mb-1">{service.title}</h2>
+        <h3 className="dark:text-dark-blue-100 text-light-blue-400 font-bold text-2xl mb-1">{service.title}</h3>
         <p>{service.description}</p>
       </li>
     </>

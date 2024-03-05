@@ -22,9 +22,9 @@ export default function Home() {
       <BoxContent title={es.technologies.title} light={true}>
         <div className="flex flex-col lg:flex-row gap-2">
           <div className="flex justify-center flex-col flex-1 gap-3">
-            <h2 className="font-bold text-[32px] md:text-5xl leading-normal dark:text-dark-blue-100 text-light-blue-500 dark:first-line:text-white first-line:text-black">
+            <h3 className="font-bold text-[32px] md:text-5xl leading-normal dark:text-dark-blue-100 text-light-blue-500 dark:first-line:text-white first-line:text-black">
               {es.technologies.action.title}
-            </h2>
+            </h3>
             <p className="text-lg">{es.technologies.action.description}</p>
             <ul className="grid grid-cols-3 sm:grid-cols-6 2xl:grid-cols-8 text-dark-gray mt-10 border-t border-l border-dark-blue-200">
               {es.technologies.tech?.map((tech, index) => (
@@ -78,9 +78,9 @@ export default function Home() {
             )}
           </ul>
           <div className="mt-8 max-w-[768px] mx-auto text-center">
-            <h2 className="font-bold text-2xl text-light-blue-400 dark:text-white">
+            <h4 className="font-bold text-2xl text-light-blue-400 dark:text-white">
               {es.services.action.title}
-            </h2>
+            </h4>
             <p className="text-xl text-balance mb-2">
               {es.services.action.description}
             </p>
@@ -155,9 +155,9 @@ export default function Home() {
                 title={es.author}
               />
               <div className="md:gap-1 flex flex-col justify-center text-center md:text-left">
-                <h1 className="font-bold text-2xl md:text-[32px] text-light-blue-400 dark:text-dark-blue-100">
+                <h3 className="font-bold text-2xl md:text-[32px] text-light-blue-400 dark:text-dark-blue-100">
                   {es.author}
-                </h1>
+                </h3>
                 <p className="text-light-black font-bold text-4xl md:text-[32px] dark:text-white leading-none">
                   {es.home.about_me.title}
                 </p>
