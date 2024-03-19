@@ -15,18 +15,35 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+  const enabled = false;
   
   return (
     <html lang="en">
       <body
-        className={`flex flex-col ${poppins.variable} font-poppins bg-white dark:bg-dark-bg min-h-screen`}
+        className={`flex justify-center items-center ${poppins.variable} font-poppins bg-white dark:bg-dark-bg min-h-screen`}
       >
-        <Hero />
+        {
+        // eslint-disable-next-line react/no-children-prop
+        enabled && <Data children={children}></Data>}
+        <h3>Something went wrong...</h3>
+      </body>
+    </html>
+  );
+}
+
+const Data = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
+  return (
+    <>
+      <Hero />
         <main className="w-full mx-auto flex-grow">
           {children}
         </main>
         <Footer />
-      </body>
-    </html>
-  );
+    </>
+  )
 }
