@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
 
-  const enabled = false;
+  const enabled = true;
   
   return (
     <html lang="en">
