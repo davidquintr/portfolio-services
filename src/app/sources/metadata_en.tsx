@@ -43,6 +43,14 @@ const createPageMetadata = (pageTitle: string) => ({
     title: `${pageTitle} | ${PAGE_PREFIX} `,
     ...MetadataBase.twitter,
   },
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: true,
+      follow: false,
+    }
+  }
 });
 
 const Metadata = createPageMetadata("Servicios");
