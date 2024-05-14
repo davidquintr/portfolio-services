@@ -17,19 +17,9 @@ import ToSlug from "./utils/toSlug";
 export const metadata: Metadata = MetadataFile;
 
 export default function Home() {
-  const enabled = false;
   return (
     <>
-      {enabled && <Data></Data>}
-    </>
-  );
-}
-
-const Data = () => {
-  
-  return(
-    <>
-          <BoxContent title={es.technologies.title} light={true}>
+      <BoxContent title={es.technologies.title} light={true}>
         <div className="flex flex-col lg:flex-row gap-2">
           <div className="flex justify-center flex-col flex-1 gap-3">
             <h3 className="font-bold text-[32px] md:text-5xl leading-normal dark:text-dark-blue-100 text-light-blue-500 dark:first-line:text-white first-line:text-black">
@@ -185,5 +175,5 @@ const Data = () => {
         </div>
       </BoxContent>
     </>
-  )
+  );
 }
